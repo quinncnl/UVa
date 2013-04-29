@@ -1,8 +1,6 @@
 #include <stdio.h>
 
-struct point {
-  float x,y;
-};
+struct point {float x,y;};
 
 int main(int argc, char *argv[])
 {
@@ -23,7 +21,6 @@ int main(int argc, char *argv[])
 	A[i].x=b;
       else
 	A[i].x=A[i-1].x+b;
-
     }
 
     scanf("%d", &n);
@@ -43,12 +40,11 @@ int main(int argc, char *argv[])
     while (pa<m && pb<n) {
 
       if (A[pa].y < B[pb].y){
-
 	if(B[pb].y<min) min=B[pb].y;
-      }   else{
-
+      }  
+      else
 	if(A[pa].y<min) min=A[pa].y;
-      }
+
 
       if (B[pb].x < A[pa].x)
 	pb++;
